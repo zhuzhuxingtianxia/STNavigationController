@@ -5,25 +5,128 @@
 [![License](https://img.shields.io/cocoapods/l/STNavigationController.svg?style=flat)](https://cocoapods.org/pods/STNavigationController)
 [![Platform](https://img.shields.io/cocoapods/p/STNavigationController.svg?style=flat)](https://cocoapods.org/pods/STNavigationController)
 
-## Example
+## 介绍
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+本项目是[JTNavigationController](https://github.com/ikanam/JTNavigationController)的swift版本(去掉了全屏返回手势)
 
-## Requirements
+越来越多的应用为每一个 **VC** 设置单独的导航条，而不是之前那样使用一个全局统一的导航条，因为不同的 **VC** 有不同的视觉样式，前一个是蓝色的，后一个也许要做成红色、透明，或者干脆没有导航条。
 
-## Installation
+虽然开发者可以在每个 **VC** 的 `viewWillAppear(_ animated: Bool)` 方法中设置自己所需的样式，但是在同一个导航条上来回修改，稍不注意就会导致样式混乱。另一种实现方式，是隐藏全局那个导航条，每个 **VC** 自己通过 `addSubview(_ view: UIView)` 的方式自己设置导航条。这种实现是可行的，但是使用不方便了，如：
+- 无法使用 `self.navigationItem.rightBarButtonItem` 等来设置导航按钮，而必须自己手动往 `navigationBar` 上加；
+- 无法使用 `self.title` 来修改导航标题，而必须自己添加监听；
+- 无法方便地设置 `navigationBarHidden`；
+- 无法方便地自动调整 `contentInsets`。
 
-STNavigationController is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+等等。
+
+本项目提供一种透明的方式，让开发者像以前一样使用导航器，同时，每个 `push` 进来的 **VC** 有自己独立的导航条。
+
+![效果1](./ScreenShot/1.png)
+
+![效果2](./ScreenShot/2.png)
+
+## 导航结构
+
+使用`STNavigationController`，你的**ViewController**的层级结构将发生改变：
+
+```
+STNavigationController
+    `- ContainViewController
+    |       `- ContainNavigationController
+    |               `- YourViewController1
+    `- ContainViewController
+            `- ContainNavigationController
+                    `- YourViewController2
+```
+
+## 集成方法
+
+STNavigationController 可通过 [CocoaPods](https://cocoapods.org)集成。安装
+
+只需将以下行添加到Podfile文件中即可 :
 
 ```ruby
 pod 'STNavigationController'
 ```
+首先`import STNavigationController`，然后将原来的`UINavigationController`替换为`STNavigationController`即可.
 
-## Author
+## 实例
 
-猪猪行天下, 873391579@qq.com
+与原生导航使用方法一致：
+```
+navigationController?.pushViewController(vc, animated: true)
+// 返回
+navigationController?.popViewController(animated: true)
+// 返回到跟视图
+navigationController?.popToRootViewController(animated: true)
+
+//返回到指定界面
+navigationController?.popToViewController(vc, animated: true)
+
+```
+获取HFNavigationController导航栈：
+```
+let nav = self.hf.navigationController
+```
+获取容器ContainController
+```
+let containViewController = self.hf.containViewController
+```
+获取导航容器中我们自己的viewControllers
+```
+let viewControllers = navigationController?.hf.viewControllers
+```
+
+修改导航栈移除前一个界面事例：
+```
+navigationController?.hf.viewControllers = navigationController?.hf.viewControllers.filter({ vc in
+                let count = navigationController?.hf.viewControllers.count
+                return navigationController?.hf.viewControllers[count - 2] != vc
+            })
+```
+
+修改导航栏颜色
+```
+navigationController?.barTintStyle(.white)
+```
+导航栏样式：
+```
+public enum NavigationBarStyle: Equatable {
+    //白色背景，黑色字体
+    case white
+    // 自定义
+    case custom(_ bgColor: UIColor, tintColor: UIColor)
+    //透明背景，白色字体
+    case clear
+    //自定义导航背景图片，默认黑色字体
+    case theme(_ image: UIImage,tintColor: UIColor?)
+}
+```
+修改控制器状态栏
+```
+self.hf.statusBarStyle(.lightContent)
+// 获取
+override var preferredStatusBarStyle: UIStatusBarStyle {
+   return hf.statusBarStyle
+}
+```
+
+## 注意点
+在有`TabBar`显示的界面，到界面底部的距离会有一个导航栏高度的偏移。
+`self.view`的高度是屏幕高度：
+
+* 使用`frame`布局时，需要考虑导航的高度和tabbar的高度
+* 使用约束布局时，只需考虑tabbar的高度
+
+```
+scrollView.snp.makeConstraints { make in
+       make.top.left.right.equalToSuperview()
+       make.bottom.equalToSuperview().offset(-(tabBarController?.tabBar.frame.height ?? 0))
+   }
+```
 
 ## License
 
 STNavigationController is available under the MIT license. See the LICENSE file for more info.
+
+

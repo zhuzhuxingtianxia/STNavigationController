@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		09E9F3D6F1CCF1A38E9306CB /* Pods_STNavigationController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5739D9654665AF837379A84D /* Pods_STNavigationController_Tests.framework */; };
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		B664D3202887FDB8005F343C /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D30E2887FDB7005F343C /* MyViewController.swift */; };
+		B664D3212887FDB8005F343C /* CustomNavigationColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D30F2887FDB7005F343C /* CustomNavigationColorController.swift */; };
+		B664D3222887FDB8005F343C /* TransparentNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D3102887FDB7005F343C /* TransparentNavigationController.swift */; };
+		B664D3232887FDB8005F343C /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D3122887FDB7005F343C /* NSObject+ClassName.swift */; };
+		B664D3242887FDB8005F343C /* UIImage+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D3132887FDB7005F343C /* UIImage+Extention.swift */; };
+		B664D3252887FDB8005F343C /* Color+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D3142887FDB7005F343C /* Color+HexString.swift */; };
+		B664D3262887FDB8005F343C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D3152887FDB7005F343C /* Const.swift */; };
+		B664D3272887FDB8005F343C /* Transparent2NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D3162887FDB7005F343C /* Transparent2NavigationController.swift */; };
+		B664D3292887FDB8005F343C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D3182887FDB8005F343C /* DetailViewController.swift */; };
+		B664D32A2887FDB8005F343C /* TabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D3192887FDB8005F343C /* TabelViewController.swift */; };
+		B664D32B2887FDB8005F343C /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D31A2887FDB8005F343C /* FindViewController.swift */; };
+		B664D32C2887FDB8005F343C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D31C2887FDB8005F343C /* BaseViewController.swift */; };
+		B664D32D2887FDB8005F343C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D31D2887FDB8005F343C /* AppDelegate.swift */; };
+		B664D32E2887FDB8005F343C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D31E2887FDB8005F343C /* NavigationController.swift */; };
+		B664D32F2887FDB8005F343C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D31F2887FDB8005F343C /* TabBarController.swift */; };
+		B664D331288802C2005F343C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D330288802C2005F343C /* ViewController.swift */; };
 		DFD4BBB249F0DF84B07EF665 /* Pods_STNavigationController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D82BCC59421F00251465F4B /* Pods_STNavigationController_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,15 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2B1DBEB54E3BAD3DB8474B90 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2B1DBEB54E3BAD3DB8474B90 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2D82BCC59421F00251465F4B /* Pods_STNavigationController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STNavigationController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DA4A4BE2D60EE7023CFEB19 /* STNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = STNavigationController.podspec; path = ../STNavigationController.podspec; sourceTree = "<group>"; };
+		2DA4A4BE2D60EE7023CFEB19 /* STNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = STNavigationController.podspec; path = ../STNavigationController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		507C4F6FF94D0D3DB55D6BD2 /* Pods-STNavigationController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STNavigationController_Tests.release.xcconfig"; path = "Target Support Files/Pods-STNavigationController_Tests/Pods-STNavigationController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5739D9654665AF837379A84D /* Pods_STNavigationController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STNavigationController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* STNavigationController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STNavigationController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -44,8 +56,24 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6ED5FDE265D2FC1F4F2A9FB1 /* Pods-STNavigationController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STNavigationController_Example.release.xcconfig"; path = "Target Support Files/Pods-STNavigationController_Example/Pods-STNavigationController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		808D77975A06369C5467403C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		808D77975A06369C5467403C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AD910DC19554A532FDF46E5F /* Pods-STNavigationController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STNavigationController_Example.debug.xcconfig"; path = "Target Support Files/Pods-STNavigationController_Example/Pods-STNavigationController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B664D30E2887FDB7005F343C /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		B664D30F2887FDB7005F343C /* CustomNavigationColorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationColorController.swift; sourceTree = "<group>"; };
+		B664D3102887FDB7005F343C /* TransparentNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentNavigationController.swift; sourceTree = "<group>"; };
+		B664D3122887FDB7005F343C /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		B664D3132887FDB7005F343C /* UIImage+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extention.swift"; sourceTree = "<group>"; };
+		B664D3142887FDB7005F343C /* Color+HexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+HexString.swift"; sourceTree = "<group>"; };
+		B664D3152887FDB7005F343C /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		B664D3162887FDB7005F343C /* Transparent2NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transparent2NavigationController.swift; sourceTree = "<group>"; };
+		B664D3182887FDB8005F343C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B664D3192887FDB8005F343C /* TabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabelViewController.swift; sourceTree = "<group>"; };
+		B664D31A2887FDB8005F343C /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		B664D31C2887FDB8005F343C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B664D31D2887FDB8005F343C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B664D31E2887FDB8005F343C /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		B664D31F2887FDB8005F343C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B664D330288802C2005F343C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA22829FA245708372C026F4 /* Pods-STNavigationController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STNavigationController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-STNavigationController_Tests/Pods-STNavigationController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,8 +130,16 @@
 		607FACD21AFB9204008FA782 /* Example for STNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				B664D3112887FDB7005F343C /* Utils */,
+				B664D31B2887FDB8005F343C /* AppDelegate */,
+				B664D30F2887FDB7005F343C /* CustomNavigationColorController.swift */,
+				B664D3182887FDB8005F343C /* DetailViewController.swift */,
+				B664D31A2887FDB8005F343C /* FindViewController.swift */,
+				B664D30E2887FDB7005F343C /* MyViewController.swift */,
+				B664D3192887FDB8005F343C /* TabelViewController.swift */,
+				B664D3162887FDB7005F343C /* Transparent2NavigationController.swift */,
+				B664D3102887FDB7005F343C /* TransparentNavigationController.swift */,
+				B664D330288802C2005F343C /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -156,8 +192,29 @@
 				BA22829FA245708372C026F4 /* Pods-STNavigationController_Tests.debug.xcconfig */,
 				507C4F6FF94D0D3DB55D6BD2 /* Pods-STNavigationController_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B664D3112887FDB7005F343C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B664D3122887FDB7005F343C /* NSObject+ClassName.swift */,
+				B664D3132887FDB7005F343C /* UIImage+Extention.swift */,
+				B664D3142887FDB7005F343C /* Color+HexString.swift */,
+				B664D3152887FDB7005F343C /* Const.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B664D31B2887FDB8005F343C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B664D31C2887FDB8005F343C /* BaseViewController.swift */,
+				B664D31D2887FDB8005F343C /* AppDelegate.swift */,
+				B664D31E2887FDB8005F343C /* NavigationController.swift */,
+				B664D31F2887FDB8005F343C /* TabBarController.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +275,6 @@
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -227,6 +283,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -314,10 +371,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-STNavigationController_Example/Pods-STNavigationController_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/STNavigationController/STNavigationController.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/STNavigationController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -331,8 +390,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				B664D3242887FDB8005F343C /* UIImage+Extention.swift in Sources */,
+				B664D3232887FDB8005F343C /* NSObject+ClassName.swift in Sources */,
+				B664D32F2887FDB8005F343C /* TabBarController.swift in Sources */,
+				B664D3292887FDB8005F343C /* DetailViewController.swift in Sources */,
+				B664D3272887FDB8005F343C /* Transparent2NavigationController.swift in Sources */,
+				B664D32E2887FDB8005F343C /* NavigationController.swift in Sources */,
+				B664D32C2887FDB8005F343C /* BaseViewController.swift in Sources */,
+				B664D32B2887FDB8005F343C /* FindViewController.swift in Sources */,
+				B664D32D2887FDB8005F343C /* AppDelegate.swift in Sources */,
+				B664D3202887FDB8005F343C /* MyViewController.swift in Sources */,
+				B664D3212887FDB8005F343C /* CustomNavigationColorController.swift in Sources */,
+				B664D3222887FDB8005F343C /* TransparentNavigationController.swift in Sources */,
+				B664D3252887FDB8005F343C /* Color+HexString.swift in Sources */,
+				B664D32A2887FDB8005F343C /* TabelViewController.swift in Sources */,
+				B664D331288802C2005F343C /* ViewController.swift in Sources */,
+				B664D3262887FDB8005F343C /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,12 +552,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = STNavigationController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -494,12 +568,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = STNavigationController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -516,12 +591,12 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STNavigationController_Example.app/STNavigationController_Example";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -534,12 +609,12 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STNavigationController_Example.app/STNavigationController_Example";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

@@ -1,0 +1,6 @@
+framework module STNavigationController {
+  umbrella header "STNavigationController-umbrella.h"
+
+  export *
+  module * { export * }
+}

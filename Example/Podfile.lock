@@ -1,0 +1,25 @@
+PODS:
+  - SnapKit (5.0.1)
+  - STNavigationController (4.2.0):
+    - STNavigationController/Core (= 4.2.0)
+  - STNavigationController/Core (4.2.0)
+
+DEPENDENCIES:
+  - SnapKit (~> 5.0.0)
+  - STNavigationController (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  STNavigationController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  STNavigationController: 0454f234250ad5fcb22f8ad9c85bab7668c912ad
+
+PODFILE CHECKSUM: cb1fc2ecf4b5ac89d5c8f32d085bccf0500c92cf
+
+COCOAPODS: 1.11.3

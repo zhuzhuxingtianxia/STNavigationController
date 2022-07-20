@@ -1,5 +1,5 @@
 import XCTest
-import STNavigationController
+//import STNavigationController
 
 class Tests: XCTestCase {
     

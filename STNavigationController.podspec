@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'STNavigationController'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of STNavigationController.'
+  s.version          = '4.2.0'
+  s.summary          = 'STNavigationController. 使每个视图控制器都有自己的导航栏'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,30 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/猪猪行天下/STNavigationController'
+  s.homepage         = 'https://github.com/zhuzhuxingtianxia/STNavigationController'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '猪猪行天下' => '873391579@qq.com' }
-  s.source           = { :git => 'https://github.com/猪猪行天下/STNavigationController.git', :tag => s.version.to_s }
+  s.author           = { 'zhuzhuxingtianxia' => '873391579@qq.com' }
+  s.source           = { :git => 'https://github.com/zhuzhuxingtianxia/STNavigationController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'STNavigationController/Classes/**/*'
+  s.swift_version = '5.0'
   
-  # s.resource_bundles = {
-  #   'STNavigationController' => ['STNavigationController/Assets/*.png']
-  # }
+  s.default_subspec  = 'Core'
+
+  s.subspec 'Core' do |core|
+    core.source_files = 'STNavigationController/Classes/**/*'
+  end
+  
+#  s.source_files = 'STNavigationController/Classes/**/*'
+  
+   s.resource_bundles = {
+     'STNavigationController' => ['STNavigationController/Assets/*.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  # s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -1,8 +1,10 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '11.0'
 
 target 'STNavigationController_Example' do
+  
+  pod 'SnapKit', '~> 5.0.0'
   pod 'STNavigationController', :path => '../'
 
   target 'STNavigationController_Tests' do

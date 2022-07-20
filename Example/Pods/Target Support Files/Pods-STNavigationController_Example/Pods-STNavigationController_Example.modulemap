@@ -1,0 +1,6 @@
+framework module Pods_STNavigationController_Example {
+  umbrella header "Pods-STNavigationController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

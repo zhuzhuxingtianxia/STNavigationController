@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  STNavigationController
 //
-//  Created by 猪猪行天下 on 07/20/2022.
+//  Created by 猪猪行天下 on 07/19/2022.
 //  Copyright (c) 2022 猪猪行天下. All rights reserved.
 //
 
@@ -14,8 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow()
+        window?.rootViewController = TabBarController()
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
