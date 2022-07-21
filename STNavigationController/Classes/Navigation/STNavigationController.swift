@@ -85,8 +85,12 @@ open class STNavigationController: UINavigationController {
 
 extension STNavigationController: UINavigationControllerDelegate {
     open func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        let isRootVC = viewController == navigationController.viewControllers.first
-        self.interactivePopGestureRecognizer?.isEnabled = !isRootVC
+        if let myVC = (viewController as? ContainViewController)?.rootViewController, myVC.popGestureEnabled {
+            let isRootVC = viewController == navigationController.viewControllers.first
+            self.interactivePopGestureRecognizer?.isEnabled = !isRootVC
+        }else {
+            self.interactivePopGestureRecognizer?.isEnabled = false
+        }
         
     }
     

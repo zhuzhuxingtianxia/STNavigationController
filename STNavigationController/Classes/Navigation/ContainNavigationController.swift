@@ -41,6 +41,23 @@ public extension STSpace where Base: UIViewController {
     
 }
 
+public extension UIViewController {
+    /// 是否允许侧滑返回
+    /// - 默认true
+    var popGestureEnabled: Bool {
+        set {
+            objc_setAssociatedObject(self, &kjt_popGestureEnabled, newValue, .OBJC_ASSOCIATION_ASSIGN)
+            self.st.navigationController?.interactivePopGestureRecognizer?.isEnabled = newValue
+        }
+        get {
+            let pop = objc_getAssociatedObject(self, &kjt_popGestureEnabled) as? Bool
+            if pop == nil {
+                return true
+            }
+            return pop!
+        }
+    }
+}
 
 /*
 extension UIViewController {
@@ -79,6 +96,7 @@ extension UIViewController {
 */
 private var kjt_navigationController: Int8 = 0
 private var kjt_containViewController: Int8 = 0
+private var kjt_popGestureEnabled: Int8 = 0
 
 // MARK: ContainViewController
 public class ContainViewController: UIViewController {

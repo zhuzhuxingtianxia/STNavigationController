@@ -22,6 +22,19 @@ class DetailViewController: UIViewController {
         
     }
     
+    // 重写返回事件
+    override func leftBarButtonAction() {
+        let alert = UIAlertController.init(title: "确定返回吗？", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction.init(title: "确定", style: .default, handler: { _ in
+            self.navigationController?.popViewController(animated: true)
+        }))
+        alert.addAction(UIAlertAction.init(title: "取消", style: .cancel, handler: { _ in
+            
+        }))
+        
+        self.present(alert, animated: true)
+    }
+    
     @objc func onBack(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }

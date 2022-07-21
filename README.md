@@ -117,6 +117,10 @@ override var preferredStatusBarStyle: UIStatusBarStyle {
    return st.statusBarStyle
 }
 ```
+当前界面设置不可侧滑返回, 默认true
+```
+popGestureEnabled = false
+```
 
 ## 注意点
 在有`TabBar`显示的界面，到界面底部的距离会有一个导航栏高度的偏移。
@@ -134,7 +138,7 @@ scrollView.snp.makeConstraints { make in
 
 * 设置导航透明`navigationController?.barTintStyle(.clear)`时，布局需要向上偏移一个导航的高度
 
-* 通过`window.rootViewController`遍历查找`currentViewController`时，可能获取到的是包装后的控制，所以需要找到我们自己的控制
+* 通过`window.rootViewController`遍历查找`currentViewController`时，可能获取到的是包装后的控制器，所以需要找到我们自己的控制器
 ```
 if let vc = currentCV, vc.isKind(of: ContainViewController.self) {
        currentCV = (vc as? ContainViewController)?.rootViewController

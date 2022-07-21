@@ -7,9 +7,9 @@
 
 import UIKit
 
-public extension UIViewController {
+extension UIViewController {
     
-    func addBarButtonItem(by image: UIImage, action: Selector?, rightSide:Bool = true, merge: Bool = false) {
+    public func addBarButtonItem(by image: UIImage, action: Selector?, rightSide:Bool = true, merge: Bool = false) {
         let btn = UIButton(type: .system)
         btn.frame = CGRect.init(x: 0, y: 0, width: image.size.width > 36 ? image.size.width : 36, height: image.size.height)
         btn.setImage(image.withRenderingMode(.alwaysOriginal), for: .normal)
@@ -31,7 +31,7 @@ public extension UIViewController {
         
     }
     
-    func addBarButton(_ item: UIBarButtonItem, rightSide:Bool, merge: Bool) {
+    public func addBarButton(_ item: UIBarButtonItem, rightSide:Bool, merge: Bool) {
         
         if rightSide {
             if merge {
@@ -57,10 +57,10 @@ public extension UIViewController {
     }
     
     
-    @objc func rightBarButtonAction() {
+    @objc open func rightBarButtonAction() {
         
     }
-    @objc func leftBarButtonAction() {
+    @objc open func leftBarButtonAction() {
         navigationController?.popViewController(animated: true)
     }
     
