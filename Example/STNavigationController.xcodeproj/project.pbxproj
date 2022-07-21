@@ -273,12 +273,10 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = D9FD56NYNC;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = D9FD56NYNC;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -557,7 +555,7 @@
 			baseConfigurationReference = AD910DC19554A532FDF46E5F /* Pods-STNavigationController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D9FD56NYNC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = STNavigationController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -574,7 +572,7 @@
 			baseConfigurationReference = 6ED5FDE265D2FC1F4F2A9FB1 /* Pods-STNavigationController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D9FD56NYNC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = STNavigationController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -590,7 +588,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BA22829FA245708372C026F4 /* Pods-STNavigationController_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = D9FD56NYNC;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -613,7 +611,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 507C4F6FF94D0D3DB55D6BD2 /* Pods-STNavigationController_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = D9FD56NYNC;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
