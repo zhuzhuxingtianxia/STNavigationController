@@ -47,6 +47,9 @@ STNavigationController 可通过 [CocoaPods](https://cocoapods.org)集成。安�
 
 ```ruby
 pod 'STNavigationController'
+// 或
+pod 'STNavigationController', :git => "https://github.com/zhuzhuxingtianxia/STNavigationController.git"
+
 ```
 首先`import STNavigationController`，然后将原来的`UINavigationController`替换为`STNavigationController`即可.
 
@@ -61,28 +64,32 @@ navigationController?.popViewController(animated: true)
 navigationController?.popToRootViewController(animated: true)
 
 //返回到指定界面
-navigationController?.popToViewController(vc, animated: true)
+if let vc = navigationController?.st.viewControllers.first(where: { $0.isKind(of: DetailViewController.self) }) {
+       navigationController?.popToViewController(vc, animated: true)
+   }
 
 ```
-获取HFNavigationController导航栈：
+获取STNavigationController导航栈：
 ```
-let nav = self.hf.navigationController
+let nav = self.st.navigationController
 ```
 获取容器ContainController
 ```
-let containViewController = self.hf.containViewController
+let containViewController = self.st.containViewController
 ```
 获取导航容器中我们自己的viewControllers
 ```
-let viewControllers = navigationController?.hf.viewControllers
+let viewControllers = navigationController?.st.viewControllers
 ```
 
 修改导航栈移除前一个界面事例：
 ```
-navigationController?.hf.viewControllers = navigationController?.hf.viewControllers.filter({ vc in
-                let count = navigationController?.hf.viewControllers.count
-                return navigationController?.hf.viewControllers[count - 2] != vc
-            })
+if let containNav = st.navigationController {
+  containNav.viewControllers = containNav.viewControllers.filter({ vc in
+      let count = containNav.viewControllers.count
+      return containNav.viewControllers[count - 2] != vc
+  })
+}
 ```
 
 修改导航栏颜色
@@ -104,10 +111,10 @@ public enum NavigationBarStyle: Equatable {
 ```
 修改控制器状态栏
 ```
-self.hf.statusBarStyle(.lightContent)
+self.st.statusBarStyle(.lightContent)
 // 获取
 override var preferredStatusBarStyle: UIStatusBarStyle {
-   return hf.statusBarStyle
+   return st.statusBarStyle
 }
 ```
 
@@ -122,6 +129,13 @@ override var preferredStatusBarStyle: UIStatusBarStyle {
 scrollView.snp.makeConstraints { make in
        make.top.left.right.equalToSuperview()
        make.bottom.equalToSuperview().offset(-(tabBarController?.tabBar.frame.height ?? 0))
+   }
+```
+
+* 通过`window.rootViewController`遍历查找`currentViewController`时，可能获取到的是包装后的控制，所以需要找到我们自己的控制
+```
+if let vc = currentCV, vc.isKind(of: ContainViewController.self) {
+       currentCV = (vc as? ContainViewController)?.rootViewController
    }
 ```
 

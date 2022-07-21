@@ -147,7 +147,7 @@ public class ContainViewController: UIViewController {
     }
 
     //MARK: getter
-    var rootViewController: UIViewController? {
+    public var rootViewController: UIViewController? {
         let containNavController = children.first as? ContainNavigationController
         return containNavController?.viewControllers.first
     }
