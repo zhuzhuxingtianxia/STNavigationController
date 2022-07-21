@@ -82,7 +82,7 @@ let containViewController = self.st.containViewController
 let viewControllers = navigationController?.st.viewControllers
 ```
 
-修改导航栈移除前一个界面事例：
+修改导航栈移除前一个界面：
 ```
 if let containNav = st.navigationController {
   containNav.viewControllers = containNav.viewControllers.filter({ vc in
@@ -92,7 +92,7 @@ if let containNav = st.navigationController {
 }
 ```
 
-修改导航栏颜色
+添加了导航扩展，修改导航栏颜色
 ```
 navigationController?.barTintStyle(.white)
 ```
