@@ -164,6 +164,14 @@ class ContainNavigationController: UINavigationController {
         super.viewDidLoad()
         
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if barStyle == .clear {
+            // 适配iOS13以下系统, 在viewWillAppear设置无效
+            barBackgroudView?.alpha = 0
+        }
+        
+    }
     
     override func popViewController(animated: Bool) -> UIViewController? {
         return navigationController?.popViewController(animated: animated)

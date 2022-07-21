@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 import STNavigationController
 
 class CustomNavigationColorController: UIViewController {
@@ -20,19 +21,47 @@ class CustomNavigationColorController: UIViewController {
         navigationController?.barTintStyle(.custom(UIColor.randColor().withAlphaComponent(0.3), tintColor: UIColor.randColor()))
         // Do any additional setup after loading the view.
         
-        view.addSubview(nextBtn)
+        setupUI()
+        setupLayouts()
         
     }
     
+    func setupUI() {
+        view.addSubview(nextBtn)
+        view.addSubview(themeBtn)
+    }
+    
+    func setupLayouts() {
+        nextBtn.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(100)
+        }
+        
+        themeBtn.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(nextBtn.snp.bottom).offset(20)
+        }
+    }
+    
+    
     @objc func onNext(_ sender: UIButton) {
         navigationController?.pushViewController(TransparentNavigationController(), animated: true)
+    }
+    @objc func onThemeNavigation(_ sender: UIButton) {
+        navigationController?.pushViewController(ThemeNavigationController(), animated: true)
     }
 
     lazy var nextBtn: UIButton = {
         let btn = UIButton(type: .system)
         btn.setTitle("Next", for: .normal)
-        btn.frame = CGRect.init(x: 100, y: 80, width: 80, height: 50)
         btn.addTarget(self, action: #selector(onNext(_:)), for: .touchUpInside)
+        return btn
+    }()
+    
+    lazy var themeBtn: UIButton = {
+        let btn = UIButton(type: .system)
+        btn.setTitle("ThemeNavigation", for: .normal)
+        btn.addTarget(self, action: #selector(onThemeNavigation(_:)), for: .touchUpInside)
         return btn
     }()
     

@@ -15,15 +15,13 @@ class TabelViewController: BaseViewController {
         super.viewDidLoad()
         title = "列表"
         // Do any additional setup after loading the view.
-        setupUI()
-        setupLayouts()
         
     }
     
-    func setupUI() {
+    override func setupUI() {
         view.addSubview(tableView)
     }
-    func setupLayouts() {
+    override func setupLayouts() {
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }

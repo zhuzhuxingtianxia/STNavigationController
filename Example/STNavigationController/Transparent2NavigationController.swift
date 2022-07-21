@@ -23,11 +23,6 @@ class Transparent2NavigationController: BaseViewController {
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        // 适配iOS13以下系统
-        navigationController?.barBackgroudView?.alpha = 0
-    }
     // 修改状态栏样式
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return st.statusBarStyle

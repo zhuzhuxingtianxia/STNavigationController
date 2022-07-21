@@ -1,27 +1,24 @@
 //
-//  BaseViewController.swift
+//  ThemeNavigationController.swift
 //  STNavigationController_Example
 //
-//  Created by ZZJ on 2022/7/20.
+//  Created by ZZJ on 2022/7/21.
 //  Copyright © 2022 CocoaPods. All rights reserved.
 //
 
 import UIKit
 import STNavigationController
 
-class BaseViewController: UIViewController {
+class ThemeNavigationController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        navigationController?.barTintStyle()
+        title = "图片主题"
         // Do any additional setup after loading the view.
-        setupUI()
-        setupLayouts()
+        navigationController?.barTintStyle(.theme(UIImage(named: "top_bg")!, tintColor: .white))
+        
     }
     
-    func setupUI() {}
-    func setupLayouts() {}
 
     /*
     // MARK: - Navigation

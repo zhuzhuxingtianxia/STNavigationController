@@ -28,6 +28,7 @@
 		B664D32E2887FDB8005F343C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D31E2887FDB8005F343C /* NavigationController.swift */; };
 		B664D32F2887FDB8005F343C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D31F2887FDB8005F343C /* TabBarController.swift */; };
 		B664D331288802C2005F343C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D330288802C2005F343C /* ViewController.swift */; };
+		B664D3332888F4C5005F343C /* ThemeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B664D3322888F4C5005F343C /* ThemeNavigationController.swift */; };
 		DFD4BBB249F0DF84B07EF665 /* Pods_STNavigationController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D82BCC59421F00251465F4B /* Pods_STNavigationController_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		B664D31E2887FDB8005F343C /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		B664D31F2887FDB8005F343C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B664D330288802C2005F343C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B664D3322888F4C5005F343C /* ThemeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeNavigationController.swift; sourceTree = "<group>"; };
 		BA22829FA245708372C026F4 /* Pods-STNavigationController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STNavigationController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-STNavigationController_Tests/Pods-STNavigationController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +141,7 @@
 				B664D3192887FDB8005F343C /* TabelViewController.swift */,
 				B664D3162887FDB7005F343C /* Transparent2NavigationController.swift */,
 				B664D3102887FDB7005F343C /* TransparentNavigationController.swift */,
+				B664D3322888F4C5005F343C /* ThemeNavigationController.swift */,
 				B664D330288802C2005F343C /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -270,10 +273,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = D9FD56NYNC;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = D9FD56NYNC;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -400,6 +405,7 @@
 				B664D32B2887FDB8005F343C /* FindViewController.swift in Sources */,
 				B664D32D2887FDB8005F343C /* AppDelegate.swift in Sources */,
 				B664D3202887FDB8005F343C /* MyViewController.swift in Sources */,
+				B664D3332888F4C5005F343C /* ThemeNavigationController.swift in Sources */,
 				B664D3212887FDB8005F343C /* CustomNavigationColorController.swift in Sources */,
 				B664D3222887FDB8005F343C /* TransparentNavigationController.swift in Sources */,
 				B664D3252887FDB8005F343C /* Color+HexString.swift in Sources */,
@@ -551,6 +557,7 @@
 			baseConfigurationReference = AD910DC19554A532FDF46E5F /* Pods-STNavigationController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D9FD56NYNC;
 				INFOPLIST_FILE = STNavigationController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -567,6 +574,7 @@
 			baseConfigurationReference = 6ED5FDE265D2FC1F4F2A9FB1 /* Pods-STNavigationController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D9FD56NYNC;
 				INFOPLIST_FILE = STNavigationController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -582,6 +590,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BA22829FA245708372C026F4 /* Pods-STNavigationController_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = D9FD56NYNC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -604,6 +613,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 507C4F6FF94D0D3DB55D6BD2 /* Pods-STNavigationController_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = D9FD56NYNC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
