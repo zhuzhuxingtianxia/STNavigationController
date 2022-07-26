@@ -117,7 +117,7 @@ override var preferredStatusBarStyle: UIStatusBarStyle {
    return st.statusBarStyle
 }
 ```
-当前界面设置不可侧滑返回, 默认true
+当前界面设置是否支持侧滑返回, 默认true
 ```
 popGestureEnabled = false
 ```
