@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'STNavigationController'
-  s.version          = '4.2.0'
+  s.version          = '4.5.0'
   s.summary          = 'STNavigationController. 使每个视图控制器都有自己的导航栏'
 
 # This description is used to generate tags and improve search results.
