@@ -41,9 +41,9 @@ STNavigationController
 
 ## 集成方法
 
-STNavigationController 可通过 [CocoaPods](https://cocoapods.org)集成。安装
+### CocoaPods
 
-只需将以下行添加到Podfile文件中即可 :
+安装只需将以下行添加到Podfile文件中即可 :
 
 ```ruby
 pod 'STNavigationController'
@@ -52,6 +52,18 @@ pod 'STNavigationController', :git => "https://github.com/zhuzhuxingtianxia/STNa
 
 ```
 首先`import STNavigationController`，然后将原来的`UINavigationController`替换为`STNavigationController`即可.
+
+### Swift Package Manager
+
+* File > Add Packages
+* 搜索 `https://github.com/zhuzhuxingtianxia/STNavigationController.git` 搜索到后点击Add Package
+* "Up to Next Major"选择一个最新的版本
+
+如果SPM加载太慢：
+
+* 下载项目到指定目录
+* 打开个人项目`File > Add Packages > Add Local`
+* 选择下载项目文件中的`Package.swift`添加本地库管理
 
 ## 实例
 
