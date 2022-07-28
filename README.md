@@ -7,7 +7,7 @@
 
 ## 介绍
 
-本项目是[JTNavigationController](https://github.com/ikanam/JTNavigationController)的swift版本(去掉了全屏返回手势)
+本项目是参考[JTNavigationController](https://github.com/ikanam/JTNavigationController)的swift版本(去掉了全屏返回手势)，并进行了扩展优化
 
 越来越多的应用为每一个 **VC** 设置单独的导航条，而不是之前那样使用一个全局统一的导航条，因为不同的 **VC** 有不同的视觉样式，前一个是蓝色的，后一个也许要做成红色、透明，或者干脆没有导航条。
 
