@@ -51,7 +51,6 @@ pod 'STNavigationController'
 pod 'STNavigationController', :git => "https://github.com/zhuzhuxingtianxia/STNavigationController.git"
 
 ```
-首先`import STNavigationController`，然后将原来的`UINavigationController`替换为`STNavigationController`即可.
 
 ### Swift Package Manager
 
@@ -67,7 +66,10 @@ pod 'STNavigationController', :git => "https://github.com/zhuzhuxingtianxia/STNa
 
 ## 实例
 
-与原生导航使用方法一致：
+* 首先`import STNavigationController`
+* 然后将原来的`UINavigationController`替换为`STNavigationController`即可.
+
+使用与原生导航方法一致：
 ```
 navigationController?.pushViewController(vc, animated: true)
 // 返回
