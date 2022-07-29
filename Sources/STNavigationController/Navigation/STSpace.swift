@@ -45,7 +45,10 @@ extension STSpace where Base: UIImage {
             image = UIImage(named: named, in: bundle, compatibleWith: nil)
         } else if /* CocoaPods */ let bundle = Bundle.init(identifier: "org.cocoapods.\(moduleName)") {
             image = UIImage(named: "\(moduleName).bundle/\(named)", in: bundle, compatibleWith: nil)
-        } else /* Manual */ {
+        } else if /* SPM */ let path = frameworkBundle.path(forResource: "STNavigationController_STNavigationController", ofType: "bundle"),let bundle = Bundle(path: path) {
+            image = UIImage(named: named, in: bundle, compatibleWith: nil)
+        }
+        else /* Manual */ {
             image = UIImage(named: named)
         }
         
