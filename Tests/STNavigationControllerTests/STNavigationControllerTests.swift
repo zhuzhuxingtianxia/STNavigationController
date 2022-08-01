@@ -6,6 +6,6 @@ final class STNavigationControllerTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.b
-        XCTAssert(UIImage.st.image(named: "nav_back") != nil, "is Pass")
+        XCTAssert(UIImage.st.image(named: "nav_back") == nil, "is Pass")
     }
 }

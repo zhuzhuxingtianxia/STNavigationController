@@ -62,7 +62,20 @@ pod 'STNavigationController', :git => "https://github.com/zhuzhuxingtianxia/STNa
 
 * 下载项目到指定目录
 * 打开个人项目`File > Add Packages > Add Local`
-* 选择下载项目文件中的`Package.swift`添加本地库管理
+* 选择下载项目`Package.swift`所在的目录文件添加本地库管理
+* `TARGET > General > Frameworks,Libraries,and Embedded Content` 点击+选择添加的package
+
+<!----
+Add Packages遇到的问题：
+**unexpected return value from ssl handshake -9806**
+* `cd` 到项目目录
+* 执行`xcodebuild -resolvePackageDependencies -scmProvider system
+`
+
+**SecureTransport error: connection closed via error (-1)**
+可以参考 [解决swift package manager fetch慢的问题](https://www.cnblogs.com/vlucht/p/15015875.html)中的第三种方案。试了下是可以的
+
+---->
 
 ## 实例
 
