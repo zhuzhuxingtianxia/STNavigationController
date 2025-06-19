@@ -154,6 +154,7 @@ popGestureEnabled = false
 `self.view`的高度是屏幕高度：
 
 * 使用`frame`布局时，需要考虑导航的高度和tabbar的高度
+
 * 使用约束布局时，只需考虑tabbar的高度
 
 ```
