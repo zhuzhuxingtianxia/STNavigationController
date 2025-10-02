@@ -1,6 +1,6 @@
 # STNavigationController
 
-![CI Status](https://img.shields.io/github/stars/zhuzhuxingtianxia/STNavigationController?style=social)
+![CI Status](https://img.shields.io/github/stars/zhuzhuxingtianxia/STNavigationController?style=flat)
 [![Version](https://img.shields.io/cocoapods/v/STNavigationController.svg?style=flat)](https://cocoapods.org/pods/STNavigationController)
 [![License](https://img.shields.io/cocoapods/l/STNavigationController.svg?style=flat)](https://cocoapods.org/pods/STNavigationController)
 [![Platform](https://img.shields.io/cocoapods/p/STNavigationController.svg?style=flat)](https://cocoapods.org/pods/STNavigationController)
