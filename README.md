@@ -175,6 +175,6 @@ if let vc = currentCV, vc.isKind(of: ContainViewController.self) {
 
 ## License
 
-STNavigationController is available under the MIT license. See the LICENSE file for more info.
+`STNavigationController` is available under the MIT license. See the LICENSE file for more info.
 
 
